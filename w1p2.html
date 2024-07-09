@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <style>
+         nav a.sitename{
+            flex:1;
+            text-align: left;
+        }
+        header {
+            padding: 10px;
+            margin-bottom: 1px;
+        }
+        .container {
+		max-width: 2000px;
+		margin: 0 auto;
+		padding: 10px;
+
+	}
+
+        nav {
+            display: flex;
+            justify-content: safe;
+            align-items: center;
+            padding: 5px;
+            margin:auto;
+            background-color:#b596f5;
+            position: fixed;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+.footer-text {
+		background-color: #a18e8e;
+		padding: 5px;
+		text-align: center;
+		border: 1p;
+		color: #160404;
+	}
+        nav a.sitename{
+            flex:1;
+            text-align: left;
+        }
+
+
+        nav a {
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium';
+            font-weight: bolder;
+            color: rgb(11, 0, 0);
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        nav a.contact:hover {
+            background-color: #ede9e9;
+        }
+
+        nav a.contact:active {
+            background-color: #44a5bd;
+        }
+        nav a.sitename:hover {
+            background-color: #f57a8a;
+        }
+
+        nav a.sitename:active {
+            background-color: #1fd4f4;
+        }
+        .container {
+		max-width: 2000px;
+		margin: 0 auto;
+		padding: 10px;
+		background-image: url();
+	}
+    .table{
+        width: 100px;
+        height: 150px;
+        border: 1px;
+    } 
+    </style>
+</head>
+<body style="background-color: rgb(41, 50, 51);">
+    <header>
+        <nav style="position: fixed; width:97%">
+                <img src="logo.jpg" alt="Logo" class="logo">
+                <a href="w1p1.html" class="sitename"><p>GAMING WORLD</p></a>
+                <a href="w1p2.html" class="contact"><p>CONTACT US</p></a>
+       </nav>
+    </header>
+    <div style="height:100px;"></div>
+    <div class="container";style="padding-top:300px">
+        <div class="container" style="text-align: center; background-color: rgb(239, 229, 249);font-size: xx-large;">
+            WELCOME TO MY GAMING WORLD
+            
+        </div><br>
+        <div>
+            <p style="font-size: larger;">Hello! gamer here we are to take you to a new world of gaming.<br> You all are just one step far from us. Remove this distance<br>by connecting with us.</p>
+                <table class="table" >
+                    <tr>                                                                                        
+                        <td><label for="name">Name:</label></td>
+                        <td><input type="text" id="name" name="name" placeholder="e.g Priyansha" required></td>
+                    </tr>
+                    <tr>
+
+                        <td><label for="email">Email Id:</label></td>
+                        <td><input type="email" id="email" name="email" placeholder="Required" required><span id="emailerr"></span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="genre">Favorite art:</label></td>
+                        <td><input list="genre" name="genre" id="genre" placeholder="tap to see" required></td>
+                    </tr>
+                        <datalist id="genre">
+                            <option value="battle royal game"></option>
+                            <option value="massively multiplayer online game"></option>
+                            <option value="FPS"></option>
+                            <option value="Minecraft"></option>
+                            <option value="Amongus"></option>
+                        </datalist>
+                </table>
+                <br>
+                <input type="checkbox" id="myCheckbox" name="myCheckbox" checked value="yes" required>
+                <label for="myCheckbox">turn on notification</label>
+                <br><br>
+                <input type="submit" name="submit" value="submit" style="align-items: center ;margin-left:650px;background-color: #05f905;" >
+
+            </form>
+            <script>
+               
+               function validate() {
+        let validated = true;
+
+
+        let ele1 = document.getElementById("name");
+        if (ele1.value.length < 3) {
+          window.alert("Name must contain atleast 3 characters");
+          validated = false;
+        } 
+        return validated;
+        const form = document.getElementById('myForm');
+	const nameInput = document.getElementById('name');
+	const emailInput = document.getElementById('email');
+
+	form.addEventListener('submit', function(event) {
+		if (nameInput.value.trim() === '' || emailInput.value.trim() === '') {
+			event.preventDefault();
+			alert('Please fill in all required fields!');
+		}
+	});
+
+      }
+      function submitForm() {
+        window.alert("Form Submitted");
+      }              
+              </script>
+              <div style="width: 300px;height: 300px;"></div>
+            
+        </div>
+    </div>
+    <div class="footer-text">
+		<p>All rights are reversed</p>
+	</div>
+</body>
+</html>
